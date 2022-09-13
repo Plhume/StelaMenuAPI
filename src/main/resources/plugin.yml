@@ -1,0 +1,5 @@
+name: StelaMenuAPI
+version: '${project.version}'
+main: fr.stelarys.stelamenuapi.StelaMenuAPI
+api-version: 1.19
+authors: [ Plhume ]
