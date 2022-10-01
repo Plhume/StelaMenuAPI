@@ -27,11 +27,10 @@ public abstract class Menu {
     public abstract TextComponent getMenuTitle();
 
     /**
-     * Set the number of rows
-     * The maximum value is 7 !
+     * Set the number of slots
      * @return
      */
-    public abstract int getRows();
+    public abstract int getSlots();
 
     /**
      * Set the actions of menu
@@ -48,7 +47,7 @@ public abstract class Menu {
      * Open the menu
      */
     public void open() {
-        inventory = Bukkit.createInventory(null, getRows() * 9, getMenuTitle());
+        inventory = Bukkit.createInventory(null, getSlots(), getMenuTitle());
 
         this.setMenuItems();
 
